@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "watch": "node-sass -o css scss/styles.scss -w"
+    },
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "node-sass": "^8.0.0"
+    },
+    "name": "sass_project",
+    "version": "1.0.0",
+    "main": "index.js"
+}

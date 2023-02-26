@@ -1,0 +1,14 @@
+.form-bar {
+  display: flex;
+  padding: 2vh 2vw;
+  background-color: color("plata"); }
+  .form-bar input {
+    width: 35%; }
+  .form-bar select {
+    width: 20%; }
+  .form-bar button {
+    border: 0;
+    color: color("blanco");
+    border-radius: 2px;
+    background-color: color("oro_oscuro") !important;
+    width: 10%; }

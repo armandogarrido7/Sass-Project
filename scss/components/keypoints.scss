@@ -1,0 +1,41 @@
+.keypoints{
+    padding:5vh 2vw;
+    @include flex(column, center, 2rem);
+    align-content: center;
+    &-title{
+        text-align: center;
+    }
+
+    &-column{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        place-items: center;
+        
+        &-icon{
+            grid-area: 1 / 1 / 2 / 2;
+            color: color(primary);
+            font-size: size(xxl);
+        }
+    
+        &-content{
+            grid-area: 1 / 2 / 2 / 3;
+            @include flex($direction: column, $gap: 2rem);
+            padding-right: 5rem;
+        }
+    
+        &-title{
+            font-size: size(md);
+            font-weight: weight(semi-bold);
+            text-align: center;
+        }
+    
+        &-text{
+            color: color('azul_claro');
+            font-size: size(sm);
+            font-weight: weight(normal);
+            text-align: center;
+        }
+    }
+
+}

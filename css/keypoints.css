@@ -1,0 +1,7 @@
+.keypoints {
+  padding: 5vh 2vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+  .keypoints-title {
+    text-align: center; }

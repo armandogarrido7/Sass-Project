@@ -1,0 +1,31 @@
+/// Footer Layout
+.footer{
+    @include flex($direction: row, $gap: 2rem);
+    background-color: color('plata');
+    padding: 2rem;
+
+    &-link{
+        color: color('azul claro');
+        padding-bottom: 2rem;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            cursor: pointer;
+            color: color('azul');
+        }
+    }
+
+    &-list{
+        list-style: none;
+    }
+
+    &-icon{
+        color: color(blanco);
+        padding: 0 1rem;
+
+        &:hover{
+            cursor: pointer;
+            color: color('azul_claro');
+        }
+    }
+}
