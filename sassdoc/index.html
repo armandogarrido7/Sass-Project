@@ -1,0 +1,239 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sass_project - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Sass_project - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Sass_project - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="*" data-type="css"><a href="#undefined-css-*">*</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container" data-type="css"><a href="#undefined-css-.container">.container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="a" data-type="css"><a href="#undefined-css-a">a</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".footer" data-type="css"><a href="#undefined-css-.footer">.footer</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flex" data-type="mixin"><a href="#undefined-mixin-flex">flex</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="stars" data-type="mixin"><a href="#undefined-mixin-stars">stars</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-*"><h3 class="item__heading"><a class="item__name" href="#css-*">*</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}</code>" data-collapsed="* { ... }"><code>* { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Inicialización de todo el documento</p></div></section><section class="main__item container item" id="undefined-css-.container"><h3 class="item__heading"><a class="item__name" href="#css-.container">.container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container {
+  display: grid;
+    grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    grid-row-gap: 1.6rem;
+    background-color: color(tertiary);
+}</code>" data-collapsed=".container { ... }"><code>.container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal</p></div></section><section class="main__item container item" id="undefined-css-a"><h3 class="item__heading"><a class="item__name" href="#css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  text-decoration: none !important;
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilo de enlaces</p></div></section><section class="main__item container item" id="undefined-css-.footer"><h3 class="item__heading"><a class="item__name" href="#css-.footer">.footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer {
+  @include flex($direction: row, $gap: 2rem);
+    background-color: color(&#39;plata&#39;);
+    padding: 2rem;
+
+    &amp;-link{
+        color: color(&#39;azul claro&#39;);
+        padding-bottom: 2rem;
+        text-align: center;
+        text-decoration: none;
+        &amp;:hover{
+            cursor: pointer;
+            color: color(&#39;azul&#39;);
+        }
+    }
+
+    &amp;-list{
+        list-style: none;
+    }
+
+    &amp;-icon{
+        color: color(azul_claro);
+        padding: 0 1rem;
+
+        &amp;:hover{
+            cursor: pointer;
+            color: color(&#39;azul&#39;);
+        }
+    }
+}</code>" data-collapsed=".footer { ... }"><code>.footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Footer Layout</p></div></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-flex"><h3 class="item__heading"><a class="item__name" href="#mixin-flex">flex</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) { 
+    display: flex;
+    flex-flow: $direction wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+ }" data-collapsed="@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) { ... }"><code>@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Posicionamiento con flex</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><ul><li>Dirección</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>row</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justify</code></th><td data-label="desc"><ul><li>Justificación</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>center</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$align</code></th><td data-label="desc"><ul><li>Alineación</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>center</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gap</code></th><td data-label="desc"><ul><li>Espacio</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>0</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.container{
+   @include flex();
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-stars"><h3 class="item__heading"><a class="item__name" href="#mixin-stars">stars</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin stars($size: xxxl) { 
+    [data-star] {
+        text-align: left;
+        font-style: normal;
+        font-size: size($size);
+        display: inline-block;
+        position: relative;
+        unicode-bidi: bidi-override;
+      }
+      
+      [data-star]::before {
+        display: block;
+        content: &quot;★★★★★&quot;;
+        color: #ddd;
+      }
+      
+      [data-star]::after {
+        position: absolute;
+        top: 0;
+        content: &quot;★★★★★&quot;;
+        width: 0;
+        color: color(oro);
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+      }
+      
+      [data-star^=&quot;0.1&quot;]::after,
+      [data-star^=&quot;.1&quot;]::after {
+        width: 2%;
+      }
+      [data-star^=&quot;0.2&quot;]::after,
+      [data-star^=&quot;.2&quot;]::after {
+        width: 4%;
+      }
+      [data-star^=&quot;0.3&quot;]::after,
+      [data-star^=&quot;.3&quot;]::after {
+        width: 6%;
+      }
+      [data-star^=&quot;0.4&quot;]::after,
+      [data-star^=&quot;.4&quot;]::after {
+        width: 8%;
+      }
+      [data-star^=&quot;0.5&quot;]::after,
+      [data-star^=&quot;.5&quot;]::after {
+        width: 10%;
+      }
+      [data-star^=&quot;0.6&quot;]::after,
+      [data-star^=&quot;.6&quot;]::after {
+        width: 12%;
+      }
+      [data-star^=&quot;0.7&quot;]::after,
+      [data-star^=&quot;.7&quot;]::after {
+        width: 14%;
+      }
+      [data-star^=&quot;0.8&quot;]::after,
+      [data-star^=&quot;.8&quot;]::after {
+        width: 16%;
+      }
+      [data-star^=&quot;0.9&quot;]::after,
+      [data-star^=&quot;.9&quot;]::after {
+        width: 18%;
+      }
+      [data-star^=&quot;1&quot;]::after {
+        width: 20%;
+      }
+      [data-star^=&quot;1.1&quot;]::after {
+        width: 22%;
+      }
+      [data-star^=&quot;1.2&quot;]::after {
+        width: 24%;
+      }
+      [data-star^=&quot;1.3&quot;]::after {
+        width: 26%;
+      }
+      [data-star^=&quot;1.4&quot;]::after {
+        width: 28%;
+      }
+      [data-star^=&quot;1.5&quot;]::after {
+        width: 30%;
+      }
+      [data-star^=&quot;1.6&quot;]::after {
+        width: 32%;
+      }
+      [data-star^=&quot;1.7&quot;]::after {
+        width: 34%;
+      }
+      [data-star^=&quot;1.8&quot;]::after {
+        width: 36%;
+      }
+      [data-star^=&quot;1.9&quot;]::after {
+        width: 38%;
+      }
+      [data-star^=&quot;2&quot;]::after {
+        width: 40%;
+      }
+      [data-star^=&quot;2.1&quot;]::after {
+        width: 42%;
+      }
+      [data-star^=&quot;2.2&quot;]::after {
+        width: 44%;
+      }
+      [data-star^=&quot;2.3&quot;]::after {
+        width: 46%;
+      }
+      [data-star^=&quot;2.4&quot;]::after {
+        width: 48%;
+      }
+      [data-star^=&quot;2.5&quot;]::after {
+        width: 50%;
+      }
+      [data-star^=&quot;2.6&quot;]::after {
+        width: 52%;
+      }
+      [data-star^=&quot;2.7&quot;]::after {
+        width: 54%;
+      }
+      [data-star^=&quot;2.8&quot;]::after {
+        width: 56%;
+      }
+      [data-star^=&quot;2.9&quot;]::after {
+        width: 58%;
+      }
+      [data-star^=&quot;3&quot;]::after {
+        width: 60%;
+      }
+      [data-star^=&quot;3.1&quot;]::after {
+        width: 62%;
+      }
+      [data-star^=&quot;3.2&quot;]::after {
+        width: 64%;
+      }
+      [data-star^=&quot;3.3&quot;]::after {
+        width: 66%;
+      }
+      [data-star^=&quot;3.4&quot;]::after {
+        width: 68%;
+      }
+      [data-star^=&quot;3.5&quot;]::after {
+        width: 70%;
+      }
+      [data-star^=&quot;3.6&quot;]::after {
+        width: 72%;
+      }
+      [data-star^=&quot;3.7&quot;]::after {
+        width: 74%;
+      }
+      [data-star^=&quot;3.8&quot;]::after {
+        width: 76%;
+      }
+      [data-star^=&quot;3.9&quot;]::after {
+        width: 78%;
+      }
+      [data-star^=&quot;4&quot;]::after {
+        width: 80%;
+      }
+      [data-star^=&quot;4.1&quot;]::after {
+        width: 82%;
+      }
+      [data-star^=&quot;4.2&quot;]::after {
+        width: 84%;
+      }
+      [data-star^=&quot;4.3&quot;]::after {
+        width: 86%;
+      }
+      [data-star^=&quot;4.4&quot;]::after {
+        width: 88%;
+      }
+      [data-star^=&quot;4.5&quot;]::after {
+        width: 90%;
+      }
+      [data-star^=&quot;4.6&quot;]::after {
+        width: 92%;
+      }
+      [data-star^=&quot;4.7&quot;]::after {
+        width: 94%;
+      }
+      [data-star^=&quot;4.8&quot;]::after {
+        width: 96%;
+      }
+      [data-star^=&quot;4.9&quot;]::after {
+        width: 98%;
+      }
+      [data-star^=&quot;5&quot;]::after {
+        width: 100%;
+      }
+ }" data-collapsed="@mixin stars($size: xxxl) { ... }"><code>@mixin stars($size: xxxl) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para estrellas de valoración</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><ul><li>Tamaño de las estrellas</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default"><code>xxxl</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.opinions-stars{
+  @include stars();
+}</code></pre></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Sass_project</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

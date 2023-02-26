@@ -1,0 +1,51 @@
+.gallery{
+    @include flex(row, center, center, 2em);
+    background-color: color(blanco);
+    min-height: 50vh;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: color(azulClaro);
+    &-card{
+        @include flex();
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        width: 20vw;
+        height: 20vw;
+    }
+    &-card:hover{
+        transition: .2s all ease-in-out;
+        scale: 1.05;
+    }
+    &-card:nth-child(1){
+        background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-traditional-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    }
+    &-card:nth-child(2){
+        background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-top-luxury-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    }
+    &-card:nth-child(3){
+        background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-large-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    }
+    &-card:nth-child(4){
+        background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-best-villas_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    }
+    &-card-title{
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.33);
+        color: color(blanco);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .gallery{
+        @include flex(column);
+        &-card{
+            width: 35vw !important;
+            height: 35vw !important;
+        }
+    }
+}

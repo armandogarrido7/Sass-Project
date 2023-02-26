@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Quicksand&display=swap");
-body {
-  font-family: 'Quicksand', sans-serif !important; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 .container {
   display: grid;
@@ -9,3 +12,6 @@ body {
   grid-template-rows: repeat(4, min-content);
   grid-row-gap: 1.6rem;
   background-color: color(tertiary); }
+
+a {
+  text-decoration: none !important; }

@@ -20,12 +20,12 @@
     }
 
     &-icon{
-        color: color(blanco);
+        color: color(azul_claro);
         padding: 0 1rem;
 
         &:hover{
             cursor: pointer;
-            color: color('azul_claro');
+            color: color('azul');
         }
     }
 }

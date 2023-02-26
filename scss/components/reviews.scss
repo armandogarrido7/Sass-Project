@@ -1,0 +1,41 @@
+.reviews {  
+    background-color: color(gris_claro);
+    &-header {
+        font-size: size(l);
+        font-weight: size(bold);
+        padding: 2vh 2vw;
+        text-align: center;
+    }
+  
+    &-text {
+      @include flex(column, center, center, 1rem);
+  
+      &-title {
+        font-size: size(l);
+        font-weight: weight(bold);
+        text-transform: uppercase;
+        color: color(negro);
+        text-align: center;
+      }
+  
+      &-description {
+        font-size: size(sm);
+        font-weight: weight(sm);
+        text-transform: none;
+        color: color(negro);
+        text-align: left;
+        padding: 0 5vw;
+        padding-bottom: 5vh;
+      }
+    }
+  }
+  
+  
+  #reviewsCarousel {
+    background-color: color(azulClaro);
+    width: 100%;
+    margin: 5vh 0;
+    padding: 0;
+  }
+
+  @include stars(xl);

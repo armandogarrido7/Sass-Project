@@ -10,7 +10,8 @@ $colors: (
     lima: lime,
     oro: gold,
     oro_oscuro: goldenrod,
-    plata: silver
+    plata: silver,
+    gris_claro: lightgray,
 );
 
 @function color($color-name) {

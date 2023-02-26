@@ -1,4 +1,5 @@
 .keypoints{
+    background-color: color(grid_claro);
     padding:5vh 2vw;
     @include flex(column, center, 2rem);
     align-content: center;
@@ -11,10 +12,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         place-items: center;
+        margin: 5vh 0;
+
         
         &-icon{
             grid-area: 1 / 1 / 2 / 2;
-            color: color(primary);
+            color: color(oro_oscuro);
             font-size: size(xxl);
         }
     
